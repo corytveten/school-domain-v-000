@@ -1,10 +1,15 @@
+require 'pry'
+
 class School
 
-  def initialize(title)
-    @title = title
+  def initialize(school_name)
+    @school_name = school_name
+    @roster = {}
   end
 
-  roster = {}
+  def roster
+    @roster
+  end
 
   def add_student(name, grade)
 
